@@ -1,0 +1,13 @@
+package pk.dydakt.to.dp.b.gof.visitor;
+
+public abstract class AbstractTitleInfo {  
+	   private String titleName;    
+	   public final void setTitleName(String titleNameIn) {
+	       this.titleName = titleNameIn;
+	   }
+	   public final String getTitleName() {
+	       return this.titleName;
+	   }
+	    
+	   public abstract void accept(TitleBlurbVisitor titleBlurbVisitor);
+	}
